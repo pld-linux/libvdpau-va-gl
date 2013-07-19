@@ -1,0 +1,12 @@
+diff -ur libvdpau-va-gl.orig/CMakeLists.txt libvdpau-va-gl/CMakeLists.txt
+--- libvdpau-va-gl.orig/CMakeLists.txt	2013-07-19 22:28:52.613148628 +0200
++++ libvdpau-va-gl/CMakeLists.txt	2013-07-19 22:30:00.663151717 +0200
+@@ -3,7 +3,7 @@
+ add_definitions(-std=gnu99 -Wall -fvisibility=hidden)
+ 
+ find_package(PkgConfig REQUIRED)
+-pkg_check_modules(SOMELIBS vdpau glib-2.0 libswscale libva-glx gl glu REQUIRED)
++pkg_check_modules(SOMELIBS vdpau glib-2.0 libswscale libva-glx gl glu x11 REQUIRED)
+ 
+ add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
+ add_custom_target(build-tests)
