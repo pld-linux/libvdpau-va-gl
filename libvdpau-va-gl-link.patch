@@ -10,3 +10,13 @@ diff -ur libvdpau-va-gl.orig/CMakeLists.txt libvdpau-va-gl/CMakeLists.txt
  
  add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
  add_custom_target(build-tests)
+--- libvdpau-va-gl-0.2.1/CMakeLists.txt~	2014-01-18 12:26:16.000000000 +0100
++++ libvdpau-va-gl-0.2.1/CMakeLists.txt	2014-01-18 12:27:33.772221702 +0100
+@@ -40,6 +40,7 @@
+ 
+ target_link_libraries (${DRIVER_NAME}
+ 	${SOMELIBS_LIBRARIES}
++	-lpthread
+ )
+ 
+ # add_library (xinitthreads SHARED xinitthreads.c)
