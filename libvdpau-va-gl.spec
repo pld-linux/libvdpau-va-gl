@@ -9,8 +9,9 @@ Source0:	https://github.com/i-rinat/libvdpau-va-gl/archive/v%{version}/%{name}-%
 # Source0-md5:	638244652a702d0262039890904f37ce
 URL:		https://github.com/i-rinat/libvdpau-va-gl
 BuildRequires:	OpenGL-devel
-BuildRequires:	OpenGL-GLU-devel
+BuildRequires:	OpenGL-GLX-devel
 BuildRequires:	cmake >= 2.8.8
+BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	libva-x11-devel
 BuildRequires:	libvdpau-devel
 BuildRequires:	pkgconfig
@@ -46,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README.md doc/known-issues.md
+%doc ChangeLog LICENSE README.md doc/known-issues.md
 %attr(755,root,root) %{_libdir}/vdpau/libvdpau_va_gl.so.1
