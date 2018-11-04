@@ -1,12 +1,12 @@
 Summary:	VDPAU driver with OpenGL/VAAPI backend
 Summary(pl.UTF-8):	Sterownik VDPAU z backendem OpenGL/VAAPI
 Name:		libvdpau-va-gl
-Version:	0.4.0
+Version:	0.4.2
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	https://github.com/i-rinat/libvdpau-va-gl/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	638244652a702d0262039890904f37ce
+# Source0-md5:	8db21dcfd5cd14c6ec51b992e20369dc
 URL:		https://github.com/i-rinat/libvdpau-va-gl
 BuildRequires:	OpenGL-devel
 BuildRequires:	OpenGL-GLX-devel
